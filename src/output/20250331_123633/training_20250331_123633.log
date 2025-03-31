@@ -1,0 +1,11 @@
+2025-03-31 12:36:33,656 - __main__ - INFO - Loading data from data/labeled_data.csv
+2025-03-31 12:36:33,683 - __main__ - INFO - Loaded 7000 reviews
+2025-03-31 12:36:33,685 - __main__ - INFO - Split data into 4900 train, 1050 validation, and 1050 test samples
+2025-03-31 12:36:34,270 - __main__ - INFO - Initializing model...
+2025-03-31 12:36:45,526 - __main__ - INFO - Using device: cpu
+2025-03-31 12:36:45,528 - __main__ - INFO - Starting training...
+2025-03-31 12:36:45,528 - trainer - INFO - Epoch 1/5
+2025-03-31 13:24:53,532 - trainer - INFO - Train Loss: 0.5352
+2025-03-31 13:24:53,533 - trainer - INFO - Val Loss: 0.3398
+2025-03-31 13:24:53,533 - trainer - INFO - Val F1: 0.0000
+2025-03-31 13:24:53,533 - trainer - INFO - Epoch 2/5

@@ -6,32 +6,36 @@ Configuration file containing label definitions and other constants for the heal
 LABELS = {
     'privacy_concerns': {
         'data_quality': {
-            'description': 'Accuracy and completeness of personal health information',
-            'keywords': ['accuracy', 'completeness', 'correct', 'information', 'data quality', 'personal health']
+            'description': 'Ensuring the data is accurate, complete and kept up to date for its intended use',
+            'keywords': ['accuracy', 'completeness', 'correct', 'information', 'data quality', 'personal health', 'up to date', 'reliable']
         },
         'data_control': {
-            'description': 'Users ability to access, manage, and restrict their data',
-            'keywords': ['access', 'control', 'manage', 'restrict', 'data control', 'privacy settings']
+            'description': 'The user\'s ability to access their data, control the data collected, make corrections, and request deletion or cessation of processing',
+            'keywords': ['access', 'control', 'manage', 'restrict', 'data control', 'privacy settings', 'delete', 'corrections', 'permission']
         }
     },
     'trust_in_providers': {
         'ethicality': {
-            'description': 'Whether users believe the provider acts transparently and respects privacy',
-            'keywords': ['transparency', 'ethical', 'privacy', 'respect', 'trustworthy', 'honest']
+            'description': 'The belief that the provider adheres to ethical standards in their practice and interactions. This involves respecting user privacy, being transparent and having clear guidelines',
+            'keywords': ['transparency', 'ethical', 'privacy', 'respect', 'trustworthy', 'honest', 'consent', 'terms of service', 'guidelines']
+        },
+        'competence': {
+            'description': 'The belief that the provider can deliver effective (medical) care through technology. It includes the provider\'s capacity to offer useful recommendations and treatment',
+            'keywords': ['competence', 'ability', 'care', 'recommendations', 'treatment', 'diagnosis', 'prescription', 'consultation', 'medical advice']
         }
     },
     'trust_in_applications': {
         'reliability': {
-            'description': 'Apps performance and uptime',
-            'keywords': ['reliable', 'stable', 'uptime', 'performance', 'functioning', 'working']
+            'description': 'Pertains to consistent performance and availability of the technology. It relates to the app\'s dependability in providing consistent, continuous service without disruptions',
+            'keywords': ['reliable', 'stable', 'uptime', 'performance', 'functioning', 'working', 'crash', 'login', 'access']
         },
         'support': {
-            'description': 'Availability and responsiveness of user assistance',
-            'keywords': ['support', 'help', 'assistance', 'customer service', 'response', 'guidance']
+            'description': 'The resources and support available to help users access, navigate or troubleshoot their use of the technology. This includes customer support, in-app help guides, or other resources',
+            'keywords': ['support', 'help', 'assistance', 'customer service', 'response', 'guidance', 'troubleshoot', 'navigate', 'resources']
         },
         'risk': {
-            'description': 'User concerns over potential negative consequences like data breaches or fraud',
-            'keywords': ['risk', 'security', 'breach', 'fraud', 'safety', 'concern']
+            'description': 'User\'s perceived risk associated with using the technology. It involves user\'s concerns about potential negative consequences such as data leakage, breaches, fraud or security issues',
+            'keywords': ['risk', 'security', 'breach', 'fraud', 'safety', 'concern', 'data leakage', 'personal info', 'privacy']
         }
     }
 }

@@ -1,0 +1,36 @@
+2025-03-31 17:28:58,030 - __main__ - INFO - Loading data from data/labeled_data.csv
+2025-03-31 17:28:58,145 - __main__ - INFO - Loaded 7000 reviews
+2025-03-31 17:28:58,160 - __main__ - INFO - Split data into 4900 train, 1050 validation, and 1050 test samples
+2025-03-31 17:29:00,029 - __main__ - INFO - Initializing model...
+2025-03-31 17:29:45,049 - __main__ - INFO - Using device: cpu
+2025-03-31 17:29:45,069 - __main__ - INFO - Starting training...
+2025-03-31 17:29:45,072 - trainer - INFO - Epoch 1/5
+2025-03-31 19:35:13,899 - trainer - INFO - Train Loss: 0.5298
+2025-03-31 19:35:13,902 - trainer - INFO - Val Loss: 0.3395
+2025-03-31 19:35:13,902 - trainer - INFO - Val F1: 0.0000
+2025-03-31 19:35:13,902 - trainer - INFO - Epoch 2/5
+2025-03-31 21:07:26,216 - trainer - INFO - Train Loss: 0.2645
+2025-03-31 21:07:26,219 - trainer - INFO - Val Loss: 0.1846
+2025-03-31 21:07:26,219 - trainer - INFO - Val F1: 0.4441
+2025-03-31 21:07:27,157 - trainer - INFO - Epoch 3/5
+2025-03-31 22:40:36,617 - trainer - INFO - Train Loss: 0.1168
+2025-03-31 22:40:36,619 - trainer - INFO - Val Loss: 0.0946
+2025-03-31 22:40:36,620 - trainer - INFO - Val F1: 0.8480
+2025-03-31 22:40:37,443 - trainer - INFO - Epoch 4/5
+2025-03-31 23:56:34,110 - trainer - INFO - Train Loss: 0.0505
+2025-03-31 23:56:34,111 - trainer - INFO - Val Loss: 0.0502
+2025-03-31 23:56:34,112 - trainer - INFO - Val F1: 0.9199
+2025-03-31 23:56:34,873 - trainer - INFO - Epoch 5/5
+2025-04-01 01:13:58,626 - trainer - INFO - Train Loss: 0.0295
+2025-04-01 01:13:58,628 - trainer - INFO - Val Loss: 0.0498
+2025-04-01 01:13:58,628 - trainer - INFO - Val F1: 0.9191
+2025-04-01 01:13:59,344 - __main__ - INFO - Saved final model to output\20250331_172855\final_model.pt
+2025-04-01 01:13:59,344 - __main__ - INFO - Evaluating on test set...
+2025-04-01 01:18:32,049 - __main__ - INFO - Test Loss: 0.0544
+2025-04-01 01:18:32,050 - __main__ - INFO - Test F1: 0.9088
+2025-04-01 01:18:32,050 - __main__ - INFO - Test Precision: 0.9206
+2025-04-01 01:18:32,050 - __main__ - INFO - Test Recall: 0.8985
+2025-04-01 01:18:32,071 - __main__ - INFO - Training completed!
+2025-04-01 01:18:32,071 - __main__ - INFO - Best validation F1 score: 0.9199
+2025-04-01 01:18:32,072 - __main__ - INFO - Best validation precision: 0.9396
+2025-04-01 01:18:32,072 - __main__ - INFO - Best validation recall: 0.9132

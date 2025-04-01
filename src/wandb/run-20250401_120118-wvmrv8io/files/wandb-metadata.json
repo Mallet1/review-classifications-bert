@@ -1,0 +1,27 @@
+{
+  "os": "Linux-6.1.0-26-amd64-x86_64-with-glibc2.36",
+  "python": "CPython 3.9.18",
+  "startedAt": "2025-04-01T17:01:18.466085Z",
+  "program": "/home/mallet/code/RaoLab/ReviewClassification/src/upload_metrics.py",
+  "codePath": "upload_metrics.py",
+  "email": "sm9dm@umsystem.edu",
+  "root": "/home/mallet/code/RaoLab/ReviewClassification/src",
+  "host": "debian",
+  "executable": "/tmp/.mount_cursorUfiyta/usr/bin/cursor",
+  "codePathLocal": "upload_metrics.py",
+  "cpu_count": 14,
+  "cpu_count_logical": 20,
+  "disk": {
+    "/": {
+      "total": "720323698688",
+      "used": "169073127424"
+    }
+  },
+  "memory": {
+    "total": "16395042816"
+  },
+  "cpu": {
+    "count": 14,
+    "countLogical": 20
+  }
+}

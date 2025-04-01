@@ -69,6 +69,33 @@ class ReviewProcessor:
         text = ' '.join(text.split())
         return text
 
+    def process_text(self, text: str) -> Dict[str, torch.Tensor]:
+        """
+        Process and tokenize a single review text for model prediction.
+        
+        Args:
+            text (str): The review text to process
+            
+        Returns:
+            Dict[str, torch.Tensor]: Dictionary containing input_ids and attention_mask
+        """
+        # First preprocess the text
+        text = self.preprocess_text(text)
+        
+        # Tokenize the text
+        encoding = self.tokenizer(
+            text,
+            truncation=True,
+            padding=True,
+            max_length=self.model_config['max_length'],
+            return_tensors='pt'
+        )
+        
+        return {
+            'input_ids': encoding['input_ids'],
+            'attention_mask': encoding['attention_mask']
+        }
+
     def create_data_loaders(self, train_data: pd.DataFrame, val_data: pd.DataFrame, 
                           test_data: pd.DataFrame, batch_size: Optional[int] = None) -> Tuple[DataLoader, DataLoader, DataLoader]:
         """Create PyTorch DataLoaders for training, validation, and test sets."""

@@ -53,11 +53,24 @@ class ReviewProcessor:
             (df['review_length'] <= self.config['max_review_length'])
         ]
         
+        # Define label mappings (CSV format -> code format)
+        label_mappings = {
+            'data quality': 'data_quality',
+            'data control': 'data_control',
+            'ethicality': 'ethicality',
+            'competence': 'competence',
+            'reliability': 'reliability',
+            'support': 'support',
+            'risk': 'risk'
+        }
+        
         # Convert sentiment to multi-label format
         from config import LABELS
         for dimension in LABELS.values():
             for label in dimension.keys():
-                df[label] = (df['sentiment'] == label).astype(int)
+                # Find the corresponding CSV label
+                csv_label = next((k for k, v in label_mappings.items() if v == label), label)
+                df[label] = (df['sentiment'].str.lower() == csv_label.lower()).astype(int)
         
         return df
 

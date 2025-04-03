@@ -23,6 +23,12 @@ def load_model(model_path):
     model.load_state_dict(checkpoint['model_state_dict'])
     model.eval()
     
+    # Print label order for debugging
+    if 'label_names' in checkpoint:
+        print("\nLabel order in model output:")
+        for i, label in enumerate(checkpoint['label_names']):
+            print(f"{i}: {label}")
+    
     return model, processor
 
 def predict_review(review_text, model, processor, threshold=0.5):
@@ -47,7 +53,7 @@ def predict_review(review_text, model, processor, threshold=0.5):
             input_ids=inputs['input_ids'],
             attention_mask=inputs['attention_mask']
         )
-        probabilities = torch.sigmoid(outputs)
+        probabilities = outputs
     
     # Convert to binary predictions using threshold
     predictions = (probabilities > threshold).int()
@@ -88,7 +94,7 @@ def main():
         raise ValueError("No run directories found")
     
     latest_run = max(run_dirs, key=lambda x: os.path.getctime(os.path.join(output_dir, x)))
-    model_path = "best_model.pt"
+    model_path = "output/windows_training1/final_model.pt"
     
     if not os.path.exists(model_path):
         raise ValueError(f"Model file not found at {model_path}")
